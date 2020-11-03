@@ -21,15 +21,15 @@ public class TestFindMaxString {
 	}
 	@Test
 	public void test_WhenMaxAtFirstPosition_thenReturnStringFromFirstPosition() {
-		assertEquals("banana", findmax.findMaxString(Arrays.asList("banana","apple","car")));
+		assertEquals("peach", findmax.maximum(Arrays.asList("peach","apple","banana")));
 	}
 	@Test
 	public void test_WhenMaxAtSecondPosition_thenReturnStringFromSecondPosition() {
-		assertEquals("banana", findmax.findMaxString(Arrays.asList("apple","banana","car")));
+		assertEquals("peach", findmax.maximum(Arrays.asList("apple","peach","car")));
 	}
 	@Test
 	public void test_WhenMaxAtThirdPosition_thenReturnStringFromThirdPosition() {
-		assertEquals("banana", findmax.findMaxString(Arrays.asList("apple","car","banana")));
+		assertEquals("peach", findmax.maximum(Arrays.asList("apple","car","peach")));
 	}
 
 }

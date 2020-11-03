@@ -21,15 +21,15 @@ public class TestFindMaxFloat {
 	}
 	@Test
 	public void test_WhenMaxAtFirstPosition_thenReturnFloatNumberFromFirstPosition() {
-		assertEquals((Float)14.5f, findmax.findMaxFloat(Arrays.asList(14.5f,8f,9f)));
+		assertEquals((Float)14.5f, findmax.maximum(Arrays.asList(14.5f,8f,9f)));
 	}
 	@Test
 	public void test_WhenMaxAtSecondPosition_thenReturnFloatNumberFromSecondPosition() {
-		assertEquals((Float)28.9f, findmax.findMaxFloat(Arrays.asList(14f,28.9f,9f)));
+		assertEquals((Float)28.9f, findmax.maximum(Arrays.asList(14f,28.9f,9f)));
 	}
 	@Test
 	public void test_WhenMaxAtThirdPosition_thenReturnFloatNumberFromThirdPosition() {
-		assertEquals((Float)19.3f, findmax.findMaxFloat(Arrays.asList(14.1f,8.2f,19.3f)));
+		assertEquals((Float)19.3f, findmax.maximum(Arrays.asList(14.1f,8.2f,19.3f)));
 	}
 
 }

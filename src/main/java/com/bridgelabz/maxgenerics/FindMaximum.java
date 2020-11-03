@@ -1,14 +1,22 @@
 package com.bridgelabz.maxgenerics;
 
-import java.util.List;
+public class FindMaximum <T extends Comparable<T>>{
+	T x,y,z;
+	public FindMaximum (T x, T y, T z) {
+		this.x=x;
+		this.y=y;
+		this.z=z;
 
-public class FindMaximum {
-	public static <T extends Comparable<T>> T maximum (List <T> Array) {
-		T max=Array.get(0);
-		if(Array.get(1).compareTo(max) > 0)
-			max=Array.get(1);
-		if(Array.get(2).compareTo(max) > 0)
-			max=Array.get(2);
+	}
+	public T maximum() {
+		return FindMaximum.maximum(x,y,z);
+	}
+	public static <T extends Comparable<T>> T maximum (T x, T y, T z) {
+		T max=x;
+		if(y.compareTo(max) > 0)
+			max=y;
+		if(z.compareTo(max) > 0)
+			max=z;
 		return max;
 	}
 }
